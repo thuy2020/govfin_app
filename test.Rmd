@@ -1,0 +1,59 @@
+---
+title: "Untitled"
+output: html_document
+date: '2022-08-17'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Per capita
+
+```{r}
+library(shiny)
+library(ggplot2)
+acfrs_8gov_type <- readRDS("acfrs_8gov_type.RDS")
+top_201_entities <- readRDS("top_201_entities.RDS")
+group_mean_percap <- readRDS("data/group_mean_percap.RDS")
+# each entity per capita
+
+top_201_entities %>% 
+  dplyr::filter(name == "Maryland") %>% 
+  select()
+  
+```
+
+```{r}
+library(ggplot2)
+library(RColorBrewer)
+
+trt<-c("trt1","trt2","trt3","trt4","trt5","trt6","trt7")
+emmean<-c(7.75,7.5,5.75,7,6,8,4)
+group<-c("c","c","b","bc","b","c","a")
+
+#specify color vector to get as many colors as group levels
+color_pallete_function <- colorRampPalette(
+  colors = brewer.pal(8,"Dark2"),
+  space = "Lab")
+
+dat<-data.frame(trt,emmean,group)
+
+dat$group<-as.factor(dat$group)
+num_colors <- nlevels(dat$group)
+diamond_color_colors <- color_pallete_function(num_colors)
+# Name your color vector
+diamond_color_colors <-setNames(diamond_color_colors, levels(dat$group))
+
+#letter display plot
+ggplot(data=dat, aes(x=reorder(trt,emmean),y=emmean,fill=group)) +
+  geom_bar( stat="identity", width=0.8) +
+  scale_fill_manual(values = diamond_color_colors)+
+  geom_text(aes(y=8, label=group, angle=90)) +
+  theme(legend.position = "none",
+        axis.text.x = element_text(angle = 45,hjust=1)) + 
+  annotate(geom="label", y=1, x=length(rownames(dat))-1, size=3, color="black", fill="white",
+           label="Means with the same letter are according\n  to Tukey test (alpha=5%) not significantly different.")
+```
+

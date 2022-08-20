@@ -1,0 +1,13 @@
+name: govfin_app
+title: govfin_app
+username:
+account: govfin
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6753615
+bundleId: 6215128
+url: https://govfin.shinyapps.io/govfin_app/
+when: 1660849257.87199
+lastSyncTime: 1660849257.87201
+asMultiple: FALSE
+asStatic: FALSE

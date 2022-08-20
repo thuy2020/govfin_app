@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+/*--------------------------------------------------------------
+	Buttons
+--------------------------------------------------------------*/
+
+
+.btn, .input-group-addon,
+#control_panel-BaseLevelAmount {
+  /* border-radius: 0; */
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  text-transform: uppercase;
+  /* letter-spacing: 2px; */
+  font-size: 14px;
+  /* padding: 8px 37px; */
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid;
+  padding: 6px;
+  /* font-size: 14px; */
+  line-height: 1.42857143;
+  border-radius: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+.open>.dropdown-menu {
+    /* border-radius: 0; */
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  text-transform: uppercase;
+  /* letter-spacing: 2px; */
+  font-size: 14px;
+  /* padding: 8px 37px; */
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  background-color: #d3d3d3;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 6px;
+  /* font-size: 14px; */
+  line-height: 1.42857143;
+  border-radius: 10px;
+}
+
+
+.btn:active, .btn:hover, .btn:focus,
+.btn-group-vertical>.btn.active, .btn-group-vertical>.btn:active, .btn-group-vertical>.btn:focus, .btn-group-vertical>.btn:hover, .btn-group>.btn.active, .btn-group>.btn:active, .btn-group>.btn:focus, .btn-group>.btn:hover {
+  /* border-radius: 0; */
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  text-transform: uppercase;
+  /* letter-spacing: 2px; */
+  font-size: 14px;
+  /* padding: 8px 37px; */
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  background-color: #313131;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 6px;
+  /* font-size: 14px; */
+  line-height: 1.42857143;
+  border-radius: 10px;
+}
+
+/** Selectize adjustments ******************************************************/
+
+.selectize-input, .selectize-control.single .selectize-input.input-active {
+    background: #242424;
+    cursor: text;
+    display: inline-block;
+}
+
+.selectize-input, #login-user_name, #login-password {
+    border: none;
+    padding: 6px 12px;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.selectize-dropdown, .selectize-input, .selectize-input input {
+    color: #fd9f02;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    -webkit-font-smoothing: inherit;
+}
+
+.selectize-input.full {
+    background-color: #242424;
+}
+
+.selectize-dropdown, .selectize-dropdown.form-control {
+    height: auto;
+    color: black;
+    font-weight: normal;
+    padding: 0;
+    margin: 2px 0 0 0;
+    z-index: 1000;
+    background: #f2f2f2;
+    /* border: 1px solid #cccccc; */
+    /* border: 1px solid rgba(0, 0, 0, 0.15); */
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.selectize-dropdown .active {
+    background-color: #333;
+    color: #fff;
+}
+
+.action-button {
+  font-family: 'IBM Plex Sans Thai', sans-serif;;
+  text-transform: uppercase;
+  /* letter-spacing: 2px; */
+  font-size: 14px;
+  /* padding: 8px 37px; */
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  background-color: #313131;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 6px;
+  /* font-size: 14px; */
+  line-height: 1.42857143;
+  border-radius: 10px;
+}
+
+
+
+
+/* Prompter  Test */
+
+[class*=hint--][aria-label]:after {
+   white-space: pre;
+   font-size: 12px;
+   font-family: 'IBM Plex Sans Thai', sans-serif;;
+   line-height: normal;
+}
+
+/* Navbar */
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+ .navbar-collapse{background-color: #fff; color: #fff;}
+ .navbar .navbar-brand {
+    background-color: #fff; 
+    width: 120px;
+ }
+ 
+ .navbar .tab-panel{ 
+   background-color: #fff;
+   color: #f63; 
+   font-weight: 700;
+   font-size: 16px;
+ }
+ 
+ .navbar .navbar-nav li a {
+ color: #333 !important;
+ background-color:#fff !important;
+ background-image: #fff !important;
+ font-size: 16px;
+ font-weight: 700;
+ margin: 2px;
+ }
+ 
+ .navbar .navbar-nav li a:hover, .navbar .navbar-nav > .active > a {
+ color: #f63 !important;
+ background-color:#fff !important;
+ background-image: #fff !important;
+ font-size: 16px;
+ font-weight: 700;
+ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ border-radius: 20px;
+ margin: 2px;
+ }
+ 
+
+
+h1, h2, h3, h4, h5, p, a {
+  font-family: 'IBM Plex Sans Thai', sans-serif;;
+  font-weight: 800;
+}
+
+p, a {
+  font-family: 'IBM Plex Sans Thai', sans-serif;;
+  font-weight: 400;
+}
+
+
+.card {
+   box-shadow: 2px 5px 19px 0px rgba(0, 0, 0, 0.39);
+}
+
+.card {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  height: 100%;
+}
+.card .card-content {
+  padding: 5px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  height: 100%;
+}
+.card .card-content p {
+  margin: 0;
+  color: inherit;
+}
